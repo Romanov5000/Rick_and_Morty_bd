@@ -1,12 +1,14 @@
 import React from 'react';
 import './Character.css';
-import Api, {getEpisode} from '../../API';
+import Api from '../../API';
+import { Link } from "react-router-dom";
 
 export default class Character extends React.Component {
     rickMortyApi = new Api();
 
     state = {
         firstEpisodeName: null,
+        id: 14,
     }
 
     componentDidMount() {
@@ -21,7 +23,7 @@ export default class Character extends React.Component {
     render () {
 
     const {firstEpisodeName} = this.state;
-    const {name, img, gender, species, status, curentLocation, firstEpisode } = this.props;
+    const {name, img, gender, species, status, curentLocation } = this.props;
     let statusCircl = 'statusCircl';
 
     if (status === 'Alive') {
@@ -33,7 +35,9 @@ export default class Character extends React.Component {
     return (
         <div className='Character'>
             <div className='imgBlock'>
+                <Link to={`/Character/${this.state.id}`}>
                 <img src = {img} alt= {name} />
+                </Link>
             </div>
             <div className='textBlock'>
             <p className = 'name'>{name}</p>
