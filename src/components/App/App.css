@@ -1,6 +1,6 @@
 .App {
-    background-color: aqua;
+    background-color: rgba(32, 35, 41, 0.5);
 }
-p{
+.App p {
     margin-top: 0;
 }

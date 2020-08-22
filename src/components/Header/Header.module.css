@@ -1,0 +1,12 @@
+.Header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_block {
+    display: block;
+}
+.title_block p{
+    font-size: 40px;
+}
