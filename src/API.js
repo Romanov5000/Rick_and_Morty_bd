@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-/*const baseURL = 'https://rickandmortyapi.com/api/';
+const baseURL = 'https://rickandmortyapi.com/api/';
 export class ApiFetch {
     getAllCharacters = async () => {
         const response = await fetch(`${baseURL}character`);
@@ -8,7 +8,7 @@ export class ApiFetch {
         const result = body.results;
         return result;
     }
-}*/
+}
 
 export default class Api {
 

@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 
 import App from './components/App';
 import { Provider } from 'react-redux';
-import store from './redusers/CharactersListReduser'
+import store from './reducers/CharactersListReducer';
 
 ReactDOM.render(
-<Provider store = {store}>
-    <App />
-</Provider>, 
-document.getElementById('root'));
+        <Provider store={store} >
+            <App />
+        </Provider>,
+        document.getElementById('root')
+    );

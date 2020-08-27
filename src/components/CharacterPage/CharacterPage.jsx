@@ -7,7 +7,7 @@ const CharacterPage = () => {
     const rickMortyApi = new Api();
 
     let { id } = useParams();
-
+    
     const [name, setName] = useState();
     const [gender, setGender] = useState();
     const [image, setImage] = useState();

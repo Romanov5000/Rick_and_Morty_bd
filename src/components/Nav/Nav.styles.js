@@ -2,12 +2,9 @@ import { createUseStyles } from 'react-jss';
 
 const styles = createUseStyles({
     Nav: {
-        '& a': {
+        '& a:not(:last-child)': {
             marginRight: '10px',
         },
-        '& a:last-child': {
-            marginRight: '0'
-        }
     }
 });
 
