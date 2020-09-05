@@ -10,3 +10,10 @@
 .title_block p{
     font-size: 40px;
 }
+.logo_link {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    text-decoration: none;
+}

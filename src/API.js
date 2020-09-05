@@ -16,6 +16,14 @@ export default class Api {
         baseURL: 'https://rickandmortyapi.com/api/'
     });
 
+    getCharactersByPage = async (pageNumber = null) => {
+        const response = pageNumber ? 
+        await this.instance.get(`character/?page=${pageNumber}`) :
+        await this.instance.get('character');
+        const result = response.data.results;
+        return result;
+    }
+
     getAllCharacters = async () => {
         const response = await this.instance.get('character');
         const result = response.data.results;
@@ -32,6 +40,7 @@ export default class Api {
         this.instance.defaults.baseURL = "";
         const response = await this.instance.get(url);
         const result = response.data.name;
+        this.instance.defaults.baseURL = "https://rickandmortyapi.com/api/";
         return result
     }
 }

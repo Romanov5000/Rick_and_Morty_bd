@@ -1,31 +1,14 @@
 import React from 'react';
 
 import './Character.css';
-import Api from '../../API';
 import { Link } from 'react-router-dom';
 
 export default class Character extends React.Component {
 
-    rickMortyApi = new Api();
-
-    state = {
-        firstEpisodeName: null,
-        id: this.props.id
-    }
-
-    componentDidMount() {
-        this.rickMortyApi.getEpisodeName(this.props.firstEpisodeUrl)
-            .then((name) => {
-                this.setState({
-                    firstEpisodeName: name
-                });
-            });
-    }
-
     render() {
         const { name, img, status, species,
-            gender, currentLocation } = this.props;
-        const { firstEpisodeName } = this.state;
+            gender, currentLocation, firstEpisodeName, id } = this.props;
+
         let statusCircleClass = 'statusCircle';
     
         if (status === 'Alive') {
@@ -42,7 +25,7 @@ export default class Character extends React.Component {
                 <div className="textBlock">
                     <div className="titleBlock">
                         <p className="name">
-                            <Link to={`/character/${this.state.id}`}>
+                            <Link to={`/character/${id}`}>
                                 {name}
                             </Link>
                         </p>
