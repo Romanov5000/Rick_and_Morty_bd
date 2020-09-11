@@ -2,25 +2,43 @@ import Api from "../API";
 
 const rickMortyApi = new Api();
 
-export const setCharactersThunk = () => {
-    return function(dispatch) {
-      return  rickMortyApi.getAllCharacters().then(
-        async (data) => {
-          const characters = [];
+export const setCharactersThunk = (pageUrl = null) => {
+  let pageNumber = null;
 
-          for(let i = 0; i<data.length; i++) {
-            const firstEpisodeNameUrl = data[i].episode[0];
-            const firstEpisodeName = await rickMortyApi.getEpisodeName(firstEpisodeNameUrl);
-            const newObject = { ...data[i], firstEpisodeName};
+  if (pageUrl) {
+    const arr = pageUrl.split("=");
+    pageNumber = arr[arr.length - 1];
+  }
+  return function (dispatch) {
+     rickMortyApi
+      .getCharactersInfoByPage(pageNumber)
+      .then(async (data) => {
+        const characters = [];
+        const responseCharactersArr = data.results;
+        const responseInfoObj = data.info;
+        
+        for (let i = 0; i < responseCharactersArr.length; i++) {
+          const firstEpisodeNameUrl = responseCharactersArr[i].episode[0];
+          const firstEpisodeName = await rickMortyApi.getEpisodeName(
+            firstEpisodeNameUrl
+          );
+          const newObject = { ...responseCharactersArr[i], firstEpisodeName };
 
-            characters.push(newObject);
-          }
-
-          dispatch({
-            type: 'IS_CHARACTERS',
-            payload: characters
-        })
+          characters.push(newObject);
         }
-      );
-    };
-}
+
+        dispatch({
+          type: "IS_CHARACTERS",
+          payload: {
+            characters,
+            paginator: {
+              prevPageUrl: responseInfoObj.prev,
+              nextPageUrl: responseInfoObj.next,
+              pageCount: responseInfoObj.pages,
+              currentPage: pageNumber || 1,
+            },
+          },
+        });
+      });
+  };
+};

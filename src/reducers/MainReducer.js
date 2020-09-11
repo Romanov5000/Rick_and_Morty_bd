@@ -1,24 +1,30 @@
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
 
 const initialState = {
-    characters: [],
-    paginator: {
-      prevPageUrl: "https://rickandmortyapi.com/api/episode?page=2",
-      nextPageUrl: "https://rickandmortyapi.com/api/episode?page=3",
-      pageCount: 6,
-    }
-}
+  characters: [],
+  episodes: [],
+  paginator: {
+    prevPageUrl: null,
+    nextPageUrl: null,
+    currentPage: null,
+    pageCount: null,
+  },
+};
 
 function MainReducer(state = initialState, action) {
-    switch (action.type) {
-      case 'IS_CHARACTERS':
-        return {...state, characters: action.payload}
-        case 'GET_NEXT_PAGE':
-          return {...state, paginator: action.payload}
-      default:
-        return state
-    }
+  switch (action.type) {
+    case "IS_CHARACTERS":
+      return {
+        ...state,
+        characters: action.payload.characters,
+        paginator: action.payload.paginator,
+      };
+      case "IS_EPISODES":
+        return {...state, episodes: action.payload.responseEpisodesArr}
+    default:
+      return state;
+  }
 }
 
 let store = createStore(MainReducer, applyMiddleware(thunk));

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 //import './Nav.css';
 import styles from './Nav.styles';
 import { setCharactersThunk } from '../../actions/setCharectersAction';
+import { setEpisodesThunk } from '../../actions/setEpisodesAction';
 import { connect } from 'react-redux';
 
 const Nav = (props) => {
@@ -11,7 +12,7 @@ const Nav = (props) => {
     return(
         <div className={`Nav ${classes.Nav}`}>
             <Link onClick={() => props.setCharacters()} to='/characters'>Characters</Link>
-            <Link to='/episodes'>Episodes</Link>
+            <Link onClick={() => props.setEpisodes()} to='/episodes'>Episodes</Link>
             <Link to='/locations'>Locations</Link>
         </div>
     );
@@ -19,6 +20,7 @@ const Nav = (props) => {
 
 const mapDispatchToProps = (dispatch) => ({
     setCharacters: () => dispatch(setCharactersThunk()),
+    setEpisodes: () => dispatch(setEpisodesThunk()),
 })
 
 export default connect(null, mapDispatchToProps)(Nav);

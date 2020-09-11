@@ -1,19 +1,19 @@
 .Header {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav_block {
-    display: block;
+  display: block;
 }
-.title_block p{
-    font-size: 40px;
+.title_block p {
+  font-size: 40px;
 }
 .logo_link {
-    font-size: 40px;
-    font-weight: bold;
-    font-style: italic;
-    margin: 0;
-    text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  text-decoration: none;
 }
