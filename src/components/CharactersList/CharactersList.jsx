@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./CharactersList.css";
 import Character from "../Character";
 import { connect } from "react-redux";
@@ -8,9 +8,7 @@ import Paginator from "../Paginator";
 class CharactersList extends React.Component {
   render() {
     const { characters } = this.props;
-    console.log(
-      characters
-    );
+    console.log(characters);
 
     const items = characters.map((item) => {
       return (

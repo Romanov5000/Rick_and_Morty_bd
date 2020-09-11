@@ -1,16 +1,18 @@
 import React from "react";
 import { connect } from "react-redux";
 import { setCharactersThunk } from "../../actions/setCharectersAction";
+import { setEpisodesThunk } from '../../actions/setEpisodesAction';
 
 const Paginator = (props) => {
   const {
     nextPageUrl,
     prevPageUrl,
     currentPage,
-    pageCount,
     getNextPage,
     getPrevPage,
+    paginatorPage,
   } = props;
+  console.log(paginatorPage);
   return (
     <div className="Paginator">
       {prevPageUrl && (
@@ -24,11 +26,13 @@ const Paginator = (props) => {
   );
 };
 
+
 const mapStateToProps = (state) => ({
   nextPageUrl: state.paginator.nextPageUrl,
   prevPageUrl: state.paginator.prevPageUrl,
   pageCount: state.paginator.pageCount,
   currentPage: state.paginator.currentPage,
+  paginatorPage: state.paginator.paginatorPage,
 });
 
 const mapDispatchToProps = (dispatch) => ({

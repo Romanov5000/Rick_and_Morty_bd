@@ -9,6 +9,7 @@ export const setCharactersThunk = (pageUrl = null) => {
     const arr = pageUrl.split("=");
     pageNumber = arr[arr.length - 1];
   }
+
   return function (dispatch) {
      rickMortyApi
       .getCharactersInfoByPage(pageNumber)
@@ -16,6 +17,7 @@ export const setCharactersThunk = (pageUrl = null) => {
         const characters = [];
         const responseCharactersArr = data.results;
         const responseInfoObj = data.info;
+  
         
         for (let i = 0; i < responseCharactersArr.length; i++) {
           const firstEpisodeNameUrl = responseCharactersArr[i].episode[0];
@@ -36,6 +38,7 @@ export const setCharactersThunk = (pageUrl = null) => {
               nextPageUrl: responseInfoObj.next,
               pageCount: responseInfoObj.pages,
               currentPage: pageNumber || 1,
+              paginatorPage:'setCharactersThunk',
             },
           },
         });

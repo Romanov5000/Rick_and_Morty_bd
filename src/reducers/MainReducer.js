@@ -9,6 +9,7 @@ const initialState = {
     nextPageUrl: null,
     currentPage: null,
     pageCount: null,
+    paginatorPage: null,
   },
 };
 
@@ -21,7 +22,9 @@ function MainReducer(state = initialState, action) {
         paginator: action.payload.paginator,
       };
       case "IS_EPISODES":
-        return {...state, episodes: action.payload.responseEpisodesArr}
+        return {...state, episodes: action.payload.responseEpisodesArr,
+          paginator: action.payload.paginator,
+        };
     default:
       return state;
   }
