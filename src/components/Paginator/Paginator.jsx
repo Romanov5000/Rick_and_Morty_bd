@@ -1,7 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { setCharactersThunk } from "../../actions/setCharectersAction";
-import { setEpisodesThunk } from '../../actions/setEpisodesAction';
 
 const Paginator = (props) => {
   const {
@@ -10,9 +8,8 @@ const Paginator = (props) => {
     currentPage,
     getNextPage,
     getPrevPage,
-    paginatorPage,
   } = props;
-  console.log(paginatorPage);
+
   return (
     <div className="Paginator">
       {prevPageUrl && (
@@ -35,9 +32,9 @@ const mapStateToProps = (state) => ({
   paginatorPage: state.paginator.paginatorPage,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  getNextPage: (nextPageUrl) => dispatch(setCharactersThunk(nextPageUrl)),
-  getPrevPage: (prevPageUrl) => dispatch(setCharactersThunk(prevPageUrl)),
+const mapDispatchToProps = (dispatch, props) => ({
+  getNextPage: (nextPageUrl) => dispatch(props.onPaginatorPage(nextPageUrl)),
+  getPrevPage: (prevPageUrl) => dispatch(props.onPaginatorPage(prevPageUrl)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Paginator);

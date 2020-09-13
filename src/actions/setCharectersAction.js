@@ -38,7 +38,6 @@ export const setCharactersThunk = (pageUrl = null) => {
               nextPageUrl: responseInfoObj.next,
               pageCount: responseInfoObj.pages,
               currentPage: pageNumber || 1,
-              paginatorPage:'setCharactersThunk',
             },
           },
         });

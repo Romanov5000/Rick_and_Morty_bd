@@ -26,7 +26,6 @@ export const setEpisodesThunk = (pageUrl = null) => {
               nextPageUrl: responseInfoObj.next,
               pageCount: responseInfoObj.pages,
               currentPage: pageNumber || 1,
-              paginatorPage:'setEpisodesThunk',
             },
           },
         });

@@ -4,6 +4,7 @@ import Character from "../Character";
 import { connect } from "react-redux";
 import Spinner from "../Spinner";
 import Paginator from "../Paginator";
+import { setCharactersThunk } from "../../actions/setCharectersAction";
 
 class CharactersList extends React.Component {
   render() {
@@ -38,7 +39,8 @@ class CharactersList extends React.Component {
           <h1>Characters</h1>
           <ul>{items}</ul>
         </div>
-        <Paginator />
+        <Paginator
+        onPaginatorPage = {setCharactersThunk} />
       </>
     );
   }

@@ -9,7 +9,6 @@ const initialState = {
     nextPageUrl: null,
     currentPage: null,
     pageCount: null,
-    paginatorPage: null,
   },
 };
 
