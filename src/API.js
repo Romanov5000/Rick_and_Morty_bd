@@ -39,10 +39,24 @@ export default class Api {
     return result;
   };
 
-  getEposode =  async (pageNumber) => {
+  getEposodeInfoByPage =  async (pageNumber) => {
     const response = pageNumber
       ? await this.instance.get(`episode?page=${pageNumber}`)
       : await this.instance.get("episode");
+    const result = response.data;
+    return result;
+  };
+
+  getEpisode = async (id) => {
+    const response = await this.instance.get(`episode/${id}`);
+    const result = response.data;
+    return result;
+  };
+
+  getLocationInfoByPage =  async (pageNumber) => {
+    const response = pageNumber
+      ? await this.instance.get(`location?page=${pageNumber}`)
+      : await this.instance.get("location");
     const result = response.data;
     return result;
   };

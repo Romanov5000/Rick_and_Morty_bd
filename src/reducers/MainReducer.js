@@ -4,6 +4,7 @@ import thunk from "redux-thunk";
 const initialState = {
   characters: [],
   episodes: [],
+  locations: [],
   paginator: {
     prevPageUrl: null,
     nextPageUrl: null,
@@ -22,6 +23,10 @@ function MainReducer(state = initialState, action) {
       };
       case "IS_EPISODES":
         return {...state, episodes: action.payload.responseEpisodesArr,
+          paginator: action.payload.paginator,
+        };
+      case "IS_LOCATION":
+        return {...state, locations: action.payload.responseLocationArr,
           paginator: action.payload.paginator,
         };
     default:

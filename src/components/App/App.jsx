@@ -5,6 +5,8 @@ import CharactersList from "../CharactersList";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import EpisodesList from "../EpisodesList";
 import CharacterPage from "../CharacterPage";
+import LocationList from "../LocationList";
+import EpisodePage from "../EpisodePage";
 
 const App = () => {
   return (
@@ -15,11 +17,17 @@ const App = () => {
           <Route path="/characters">
             <CharactersList />
           </Route>
+          <Route path={`/character/:id`}>
+            <CharacterPage />
+          </Route>
           <Route path="/episodes">
             <EpisodesList />
           </Route>
-          <Route path={`/character/:id`}>
-            <CharacterPage />
+          <Route path={`/episode/:id`}>
+            <EpisodePage />
+          </Route>
+          <Route path={`/locations`}>
+            <LocationList />
           </Route>
         </Switch>
       </div>
