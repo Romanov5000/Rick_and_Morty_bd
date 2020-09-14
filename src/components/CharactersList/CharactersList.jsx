@@ -9,7 +9,7 @@ import { setCharactersThunk } from "../../actions/setCharectersAction";
 class CharactersList extends React.Component {
   render() {
     const { characters } = this.props;
-    //console.log(characters);
+    console.log(characters);
 
     const items = characters.map((item) => {
       return (
@@ -21,6 +21,7 @@ class CharactersList extends React.Component {
             species={item.species}
             gender={item.gender}
             currentLocation={item.location.name}
+            currentLocationUrl={item.location.url}
             firstEpisodeUrl={item.episode[0]}
             firstEpisodeName={item.firstEpisodeName}
             id={item.id}

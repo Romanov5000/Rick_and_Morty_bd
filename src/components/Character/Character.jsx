@@ -15,13 +15,17 @@ export default class Character extends React.Component {
       firstEpisodeName,
       firstEpisodeUrl,
       id,
+      currentLocationUrl,
     } = this.props;
-    // console.log(firstEpisodeUrl);
 
     let statusCircleClass = "statusCircle";
 
     let firstEpisodeId = firstEpisodeUrl.split("/");
     firstEpisodeId = firstEpisodeId[firstEpisodeId.length - 1];
+
+    let currentLocationUrlId = currentLocationUrl.split("/");
+    currentLocationUrlId =
+      currentLocationUrlId[currentLocationUrlId.length - 1];
 
     if (status === "Alive") {
       statusCircleClass += " alive";
@@ -32,7 +36,9 @@ export default class Character extends React.Component {
     return (
       <div className="Character">
         <div className="imgBlock">
-          <img src={img} alt={name} />
+          <Link to={`/character/${id}`}>
+            <img src={img} alt={name} />
+          </Link>
         </div>
         <div className="textBlock">
           <div className="titleBlock">
@@ -49,7 +55,9 @@ export default class Character extends React.Component {
           </div>
           <div className="locationBlock">
             <p className="title">Current location</p>
-            <p className="location">{currentLocation}</p>
+            <p className="location">
+              <Link to={`/location/${currentLocationUrlId}`}>{currentLocation}</Link>
+            </p>
           </div>
           <div className="firstSeenBlock">
             <p className="title">First seen in:</p>

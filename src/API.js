@@ -53,10 +53,24 @@ export default class Api {
     return result;
   };
 
+  getLocationCharactersImg = async (url) => {
+    this.instance.defaults.baseURL = "";
+    const response = await this.instance.get(url);
+    const result = response.data.image;
+    this.instance.defaults.baseURL = "https://rickandmortyapi.com/api/";
+    return result;
+  };
+
   getLocationInfoByPage =  async (pageNumber) => {
     const response = pageNumber
       ? await this.instance.get(`location?page=${pageNumber}`)
       : await this.instance.get("location");
+    const result = response.data;
+    return result;
+  };
+
+  getLocation = async (id) => {
+    const response = await this.instance.get(`location/${id}`);
     const result = response.data;
     return result;
   };

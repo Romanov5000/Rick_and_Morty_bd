@@ -7,6 +7,7 @@ import EpisodesList from "../EpisodesList";
 import CharacterPage from "../CharacterPage";
 import LocationList from "../LocationList";
 import EpisodePage from "../EpisodePage";
+import LocationPage from "../LocationPage";
 
 const App = () => {
   return (
@@ -28,6 +29,9 @@ const App = () => {
           </Route>
           <Route path={`/locations`}>
             <LocationList />
+          </Route>
+          <Route path={`/location/:id`}>
+            <LocationPage />
           </Route>
         </Switch>
       </div>

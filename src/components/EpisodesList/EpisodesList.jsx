@@ -8,6 +8,7 @@ import { setEpisodesThunk } from '../../actions/setEpisodesAction';
 class EpisodesList extends React.Component {
   render() {
     const { episodes } = this.props;
+    console.log(episodes);
     const Episodeitems = episodes.map((item) => {
       return (
         <li key={item.id}>

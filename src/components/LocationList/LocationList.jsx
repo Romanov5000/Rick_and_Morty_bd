@@ -15,6 +15,7 @@ class LocationList extends React.Component {
             locationName={item.name}
             dimension={item.dimension}
             type={item.type}
+            id={item.id}
           />
         </li>
       );

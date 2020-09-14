@@ -9,6 +9,7 @@ export const setEpisodesThunk = (pageUrl = null) => {
     const arr = pageUrl.split("=");
     pageNumber = arr[arr.length - 1];
  }
+ 
 
   return function (dispatch) {
      rickMortyApi
@@ -16,6 +17,7 @@ export const setEpisodesThunk = (pageUrl = null) => {
       .then(async (data) => {
         const responseEpisodesArr = data.results;
         const responseInfoObj = data.info;
+
 
         dispatch({
           type: "IS_EPISODES",
