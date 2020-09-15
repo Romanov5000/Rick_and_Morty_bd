@@ -9,6 +9,7 @@ import LocationList from "../LocationList";
 import EpisodePage from "../EpisodePage";
 import LocationPage from "../LocationPage";
 import Body from "../Body";
+import Footer from "../Footer";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
           </Route>
           <Body/>
         </Switch>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

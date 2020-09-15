@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import Spinner from "../Spinner";
 import Paginator from "../Paginator";
 import { setCharactersThunk } from "../../actions/setCharectersAction";
+import styles from "./CharacterList.module.css";
 
 class CharactersList extends React.Component {
   render() {
