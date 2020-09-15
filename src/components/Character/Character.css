@@ -1,14 +1,21 @@
 .Character {
     display: flex;
+    background-color: darkcyan;
+    border-radius: 1rem;
+    margin-bottom: 0.4rem;
+    justify-content: space-between;
 }
 .imgBlock {
-    width: 30%;
+    width: 35%;
 }
 .imgBlock img {
     max-width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 100%;
 }
 .textBlock {
-    width: 70%;
+    width: 55%;
 }
 .statusCircle {
     display: inline-block;
@@ -22,4 +29,15 @@
 }
 .statusCircle.dead {
     background-color: rgb(214, 61, 46);
+}
+.left {
+    position: relative;
+    right: -12%;
+}
+.right{
+    position: absolute;
+    right: 9%;
+}
+.right .rem {
+    margin-right: 21rem;
 }

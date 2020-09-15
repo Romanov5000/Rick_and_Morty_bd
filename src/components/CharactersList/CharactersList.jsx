@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import "./CharactersList.css";
 import Character from "../Character";
 import { connect } from "react-redux";
 import Spinner from "../Spinner";
@@ -10,7 +9,6 @@ import styles from "./CharacterList.module.css";
 class CharactersList extends React.Component {
   render() {
     const { characters } = this.props;
-    console.log(characters);
 
     const items = characters.map((item) => {
       return (
@@ -37,7 +35,7 @@ class CharactersList extends React.Component {
 
     return (
       <>
-        <div className="CharactersList">
+        <div className={styles.CharactersList}>
           <h1>Characters</h1>
           <ul>{items}</ul>
         </div>

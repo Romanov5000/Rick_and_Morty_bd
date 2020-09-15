@@ -19,6 +19,7 @@ export default class Character extends React.Component {
     } = this.props;
 
     let statusCircleClass = "statusCircle";
+    let flex = '';
 
     let firstEpisodeId = firstEpisodeUrl.split("/");
     firstEpisodeId = firstEpisodeId[firstEpisodeId.length - 1];
@@ -32,12 +33,17 @@ export default class Character extends React.Component {
     } else if (status === "Dead") {
       statusCircleClass += " dead";
     }
+    if (id % 2 === 0){
+      flex = 'left'
+    } else {
+      flex = 'right'
+    }
 
     return (
-      <div className="Character">
+      <div className={`Character ${flex}`}>
         <div className="imgBlock">
           <Link to={`/character/${id}`}>
-            <img src={img} alt={name} />
+            <img src={img} alt={name} width='100%' height='100%'/>
           </Link>
         </div>
         <div className="textBlock">
@@ -64,6 +70,7 @@ export default class Character extends React.Component {
             <p className="firstEpisode">
               <Link to={`/episode/${firstEpisodeId}`}>{firstEpisodeName}</Link>
             </p>
+            <div className='rem'>.</div>
           </div>
         </div>
       </div>
