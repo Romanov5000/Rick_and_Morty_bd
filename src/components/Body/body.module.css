@@ -1,0 +1,61 @@
+.Body {
+  background-image: url("https://occ-0-3666-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXrNkpl3Xumqf5nwTEtMZT6iG0GRUUb0_kF8TxF4AuRsWMV6S0Wazz0U3gzIBhEe-ylLRNW0qA60_zVnUbFWbOhu4AeC.jpg?r=f61");
+color: cornsilk;
+}
+
+.textBody {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#171717),
+    color-stop(20%, rgba(23, 23, 23, 0.98)),
+    color-stop(25%, rgba(23, 23, 23, 0.97)),
+    color-stop(35%, rgba(23, 23, 23, 0.95)),
+    color-stop(40%, rgba(23, 23, 23, 0.94)),
+    color-stop(45%, rgba(23, 23, 23, 0.92)),
+    color-stop(50%, rgba(23, 23, 23, 0.9)),
+    color-stop(55%, rgba(23, 23, 23, 0.87)),
+    color-stop(60%, rgba(23, 23, 23, 0.82)),
+    color-stop(65%, rgba(23, 23, 23, 0.75)),
+    color-stop(70%, rgba(23, 23, 23, 0.63)),
+    color-stop(75%, rgba(23, 23, 23, 0.45)),
+    color-stop(80%, rgba(23, 23, 23, 0.27)),
+    color-stop(85%, rgba(23, 23, 23, 0.15)),
+    color-stop(90%, rgba(23, 23, 23, 0.08)),
+    color-stop(95%, rgba(23, 23, 23, 0.03)),
+    to(rgba(23, 23, 23, 0))
+  );
+  padding: 13rem 0rem 6rem 7rem;
+  width: 32%;
+}
+.infoBlock{
+  border-right: 1px solid #a3a3a3;
+  margin-right: 0.6rem;
+  padding-right: 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+  color: #a3a3a3;
+}
+.lastInfoBlock{
+  margin-right: 0.6rem;
+  padding-right: 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+  color: #a3a3a3;
+}
+.infoBlocks{
+margin-bottom: 1rem;
+}
+.creatorNameBlock{
+  font-size: 1.1rem;
+    font-weight: 400;
+    color: #a3a3a3;
+    margin-right: 0.5rem;
+}
+.creatorBlock{
+  margin-bottom: 0.1rem;
+}
+

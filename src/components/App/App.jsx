@@ -8,6 +8,7 @@ import CharacterPage from "../CharacterPage";
 import LocationList from "../LocationList";
 import EpisodePage from "../EpisodePage";
 import LocationPage from "../LocationPage";
+import Body from "../Body";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Route path={`/location/:id`}>
             <LocationPage />
           </Route>
+          <Body/>
         </Switch>
       </div>
     </BrowserRouter>
