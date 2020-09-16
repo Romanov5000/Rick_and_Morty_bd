@@ -1,9 +1,10 @@
 .Character {
     display: flex;
-    background-color: darkcyan;
+    background-color: rgb(60, 62, 68);
     border-radius: 1rem;
     margin-bottom: 0.4rem;
     justify-content: space-between;
+    box-shadow: 0 0 3px rgb(216 199 199 / 50%);
 }
 .imgBlock {
     width: 35%;
@@ -16,13 +17,18 @@
 }
 .textBlock {
     width: 55%;
+    color: cornsilk;
+}
+.textBlock .name a{
+    font-size: 1.3rem;
 }
 .statusCircle {
     display: inline-block;
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: rgb(175, 214, 46);
+    background-color: rgb(153, 157, 140);
+    margin-right: 0.2rem;
 }
 .statusCircle.alive {
     background-color: rgb(85, 204, 68);
@@ -39,5 +45,5 @@
     right: 9%;
 }
 .right .rem {
-    margin-right: 21rem;
+    margin-right: 15rem;
 }

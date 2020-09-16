@@ -60,17 +60,16 @@ export default class Character extends React.Component {
             </p>
           </div>
           <div className="locationBlock">
-            <p className="title">Current location</p>
+            <p className="title">Current location:</p>
             <p className="location">
               <Link to={`/location/${currentLocationUrlId}`}>{currentLocation}</Link>
             </p>
           </div>
           <div className="firstSeenBlock">
-            <p className="title">First seen in:</p>
+            <p className="rem">First seen in:</p>
             <p className="firstEpisode">
               <Link to={`/episode/${firstEpisodeId}`}>{firstEpisodeName}</Link>
             </p>
-            <div className='rem'>.</div>
           </div>
         </div>
       </div>
