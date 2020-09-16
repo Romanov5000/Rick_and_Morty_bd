@@ -1,0 +1,11 @@
+.Episode{
+    padding: 0.5rem;
+    border-bottom: 1px solid #a3a3a3;
+}
+.episodeName{
+    font-size: x-large;
+}
+.episodeName a{
+    padding-right: 5rem;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Api from "../../API";
+import style from "./EpisodePage.module.css";
 
 const EpisodePage = () => {
   const rickMortyApi = new Api();
@@ -22,28 +23,31 @@ const EpisodePage = () => {
     getEpisode(id);
   }, [id, rickMortyApi]);
 
- let episodVideoUrl = <div></div>;
+  let episodVideoUrl = <div></div>;
 
-if (episode){
-     
-     episodVideoUrl = <div>
-         <video
+  if (episode) {
+    episodVideoUrl = (
+      <div>
+        <video 
           controls
-          width="710"
+          width="950"
           height="538"
           poster="/examples/media/martynko.png"
           preload="none"
         >
-          <source src={`https://vs1.cdnlast.com/s/683c3595441c09782f930d2a791807eb/rick.and.morty.2013.siendyk-nf20/${episode}_720.mp4`} type="video/mp4" />
+          <source
+            src={`https://vs1.cdnlast.com/s/683c3595441c09782f930d2a791807eb/rick.and.morty.2013.siendyk-nf20/${episode}_720.mp4`}
+            type="video/mp4"
+          />
         </video>
-     </div>
-    }
-  
+      </div>
+    );
+  }
 
   return (
-    <div className="EpisodePage">
-      <h1>{name}</h1>
-      <div className="episodeBlock">
+    <div className={style.EpisodePage}>
+      <div className={style.episodeBlock}>
+        <h1>{name}</h1>
         <div>{episode}</div>
         <div>{data}</div>
         {episodVideoUrl}

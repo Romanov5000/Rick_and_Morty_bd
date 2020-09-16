@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import Episode from "../Episode";
 import Spinner from "../Spinner";
 import Paginator from "../Paginator";
-import { setEpisodesThunk } from '../../actions/setEpisodesAction';
+import { setEpisodesThunk } from "../../actions/setEpisodesAction";
+import styles from "./EpisodeList.module.css";
 
 class EpisodesList extends React.Component {
   render() {
@@ -28,8 +29,8 @@ class EpisodesList extends React.Component {
 
     return (
       <>
-        <div className="EpisodesList">
-          <div>EpisodeList</div>
+        <div className={styles.EpisodesList}>
+          <h1>Episode List</h1>
           <ul>{Episodeitems}</ul>
         </div>
         <Paginator 

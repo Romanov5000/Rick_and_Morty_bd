@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import Location from "../Location";
 import Spinner from "../Spinner";
 import Paginator from "../Paginator";
-import { setLocationThunk } from '../../actions/setLocationsAction';
+import { setLocationThunk } from "../../actions/setLocationsAction";
+import styles from "./LocationList.module.css";
 
 class LocationList extends React.Component {
   render() {
@@ -27,8 +28,8 @@ class LocationList extends React.Component {
     
     return (
       <>
-        <div className="LocationsList">
-          <div>LocationList</div>
+        <div className={styles.LocationsList}>
+          <h1>Location List</h1>
           <ul>{Locationitems}</ul>
         </div>
         <Paginator 

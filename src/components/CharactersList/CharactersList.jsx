@@ -36,7 +36,7 @@ class CharactersList extends React.Component {
     return (
       <>
         <div className={styles.CharactersList}>
-          <h1>Characters</h1>
+          <h1>Character List</h1>
           <ul>{items}</ul>
         </div>
         <Paginator
