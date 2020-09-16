@@ -1,0 +1,31 @@
+.characterBlock{
+    display: flex
+}
+.CharacterPage{
+    background-image: url("https://images8.alphacoders.com/794/794372.jpg");
+    background-size: 100%;
+}
+.CharacterPageDark{
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#171717),
+        color-stop(20%, rgba(23, 23, 23, 0.98)),
+        color-stop(25%, rgba(23, 23, 23, 0.97)),
+        color-stop(35%, rgba(23, 23, 23, 0.95)),
+        color-stop(40%, rgba(23, 23, 23, 0.94)),
+        color-stop(45%, rgba(23, 23, 23, 0.92)),
+        color-stop(50%, rgba(23, 23, 23, 0.9)),
+        color-stop(55%, rgba(23, 23, 23, 0.87)),
+        color-stop(60%, rgba(23, 23, 23, 0.82)),
+        color-stop(65%, rgba(23, 23, 23, 0.75)),
+        color-stop(70%, rgba(23, 23, 23, 0.63)),
+        color-stop(75%, rgba(23, 23, 23, 0.45)),
+        color-stop(80%, rgba(23, 23, 23, 0.27)),
+        color-stop(85%, rgba(23, 23, 23, 0.15)),
+        color-stop(90%, rgba(23, 23, 23, 0.08)),
+        color-stop(95%, rgba(23, 23, 23, 0.03)),
+        to(rgba(23, 23, 23, 0))
+      );
+}

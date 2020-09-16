@@ -1,0 +1,19 @@
+.Paginator {
+  color: cornsilk;
+  text-align: center;
+}
+.Paginator button {
+  color: cornsilk;
+  background-color: rgb(60, 62, 68);
+  border: none;
+  border-radius: 5%;
+  margin: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+.Paginator button:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.Paginator button:hover {
+  color: burlywood;
+}

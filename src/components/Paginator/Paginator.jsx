@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import styles from "./Paginator.module.css";
 
 const Paginator = (props) => {
   const {
@@ -11,13 +12,13 @@ const Paginator = (props) => {
   } = props;
 
   return (
-    <div className="Paginator">
+    <div className={styles.Paginator}>
       {prevPageUrl && (
-        <button onClick={() => getPrevPage(prevPageUrl)}>prevBtn</button>
+        <button onClick={() => getPrevPage(prevPageUrl)}>Prev List</button>
       )}
       <span>{currentPage}</span>
       {nextPageUrl && (
-        <button onClick={() => getNextPage(nextPageUrl)}>nextBtn</button>
+        <button onClick={() => getNextPage(nextPageUrl)}>Next List</button>
       )}
     </div>
   );
