@@ -1,5 +1,6 @@
 .characterBlock{
-    display: flex
+    display: flex;
+    padding: 5rem 2rem 20rem;
 }
 .CharacterPage{
     background-image: url("https://images8.alphacoders.com/794/794372.jpg");
@@ -28,4 +29,22 @@
         color-stop(95%, rgba(23, 23, 23, 0.03)),
         to(rgba(23, 23, 23, 0))
       );
+      color: cornsilk;
+}
+.characterImg img{
+    border-radius: 50%;
+    margin-left: 4rem;
+}
+
+.characterInfo{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.CharacterPage a{
+    margin-left: 2rem;
+}
+.characterInfoBlock{
+    margin-top: 1rem;
+    font-family: cursive;
+    font-size: larger;
 }

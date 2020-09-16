@@ -48,15 +48,16 @@ const CharacterPage = () => {
   return (
     <div className={styles.CharacterPage}>
       <div className={styles.CharacterPageDark}> 
-        <h1>{name}</h1>
         <div className={styles.characterBlock}>
-          <div>
+          <div className={styles.characterImg}>
             <img src={image} alt={`${name}`} />
           </div>
-          <div>
-            <div>{gender}</div>
-            <div>{species}</div>
-            <div>{status}</div>
+          <div className={styles.characterInfoBlock}>
+            <div className={styles.characterInfo}>Name - {name}</div>
+            <div className={styles.characterInfo}>Gender - {gender}</div>
+            <div className={styles.characterInfo}>Race - {species}</div>
+            <div className={styles.characterInfo}>Status - {status}</div>
+            <div className={styles.characterInfo}>Home planet:</div>
             {locationHome}
           </div>
         </div>
