@@ -21,14 +21,16 @@ function MainReducer(state = initialState, action) {
         characters: action.payload.characters,
         paginator: action.payload.paginator,
       };
-      case "IS_EPISODES":
-        return {...state, episodes: action.payload.responseEpisodesArr,
-          paginator: action.payload.paginator,
-        };
-      case "IS_LOCATION":
-        return {...state, locations: action.payload.responseLocationArr,
-          paginator: action.payload.paginator,
-        };
+    case "IS_EPISODES":
+      return {
+        ...state, episodes: action.payload.responseEpisodesArr,
+        paginator: action.payload.paginator,
+      };
+    case "IS_LOCATION":
+      return {
+        ...state, locations: action.payload.responseLocationArr,
+        paginator: action.payload.paginator,
+      };
     default:
       return state;
   }

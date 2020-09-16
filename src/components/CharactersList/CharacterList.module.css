@@ -1,9 +1,9 @@
 ul {
-    list-style: none;
-    width: 40%
+  list-style: none;
+  width: 40%;
 }
-.CharactersList h1{
-    color: cornsilk;
-    text-align: center;
-    font-family: cursive;
+.CharactersList h1 {
+  color: cornsilk;
+  text-align: center;
+  font-family: cursive;
 }

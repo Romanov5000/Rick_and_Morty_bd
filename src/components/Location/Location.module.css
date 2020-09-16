@@ -1,14 +1,14 @@
-.Location{
-    padding: 0.5rem;
-    border-bottom: 1px solid #a3a3a3;
+.Location {
+  padding: 0.5rem;
+  border-bottom: 1px solid #a3a3a3;
 }
-.Location li{
-    margin-right: -5rem;
+.Location li {
+  margin-right: -5rem;
 }
-.locationName{
-    font-size: x-large;
+.locationName {
+  font-size: x-large;
 }
-.locationName a{
-    padding-right: 5rem;
-    cursor: pointer;
+.locationName a {
+  padding-right: 5rem;
+  cursor: pointer;
 }

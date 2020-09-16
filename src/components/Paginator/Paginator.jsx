@@ -24,7 +24,6 @@ const Paginator = (props) => {
   );
 };
 
-
 const mapStateToProps = (state) => ({
   nextPageUrl: state.paginator.nextPageUrl,
   prevPageUrl: state.paginator.prevPageUrl,

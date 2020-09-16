@@ -1,9 +1,7 @@
-
-
-.Nav a{
-    margin-right: 10px;
-    color: #a3a3a3;
-    text-decoration: none;
-    font-family: system-ui;
-    font-size: 1.2rem;
+.Nav a {
+  margin-right: 10px;
+  color: #a3a3a3;
+  text-decoration: none;
+  font-family: system-ui;
+  font-size: 1.2rem;
 }

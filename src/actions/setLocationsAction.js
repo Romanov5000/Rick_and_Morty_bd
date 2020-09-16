@@ -8,10 +8,10 @@ export const setLocationThunk = (pageUrl = null) => {
   if (pageUrl) {
     const arr = pageUrl.split("=");
     pageNumber = arr[arr.length - 1];
- }
+  }
 
   return function (dispatch) {
-     rickMortyApi
+    rickMortyApi
       .getLocationInfoByPage(pageNumber)
       .then(async (data) => {
         const responseLocationArr = data.results;

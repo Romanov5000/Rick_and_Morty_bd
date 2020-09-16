@@ -25,15 +25,14 @@ class LocationList extends React.Component {
     if (!locations.length) {
       return <Spinner />;
     }
-    
+
     return (
       <>
         <div className={styles.LocationsList}>
           <h1>Location List</h1>
           <ul>{Locationitems}</ul>
         </div>
-        <Paginator 
-        onPaginatorPage = {setLocationThunk}/>
+        <Paginator onPaginatorPage={setLocationThunk} />
       </>
     );
   }

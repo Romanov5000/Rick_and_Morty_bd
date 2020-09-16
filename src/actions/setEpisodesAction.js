@@ -8,11 +8,11 @@ export const setEpisodesThunk = (pageUrl = null) => {
   if (pageUrl) {
     const arr = pageUrl.split("=");
     pageNumber = arr[arr.length - 1];
- }
- 
+  }
+
 
   return function (dispatch) {
-     rickMortyApi
+    rickMortyApi
       .getEposodeInfoByPage(pageNumber)
       .then(async (data) => {
         const responseEpisodesArr = data.results;

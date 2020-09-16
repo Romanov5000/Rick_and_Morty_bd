@@ -28,7 +28,7 @@ const EpisodePage = () => {
   if (episode) {
     episodVideoUrl = (
       <div>
-        <video 
+        <video
           controls
           width="950"
           height="538"

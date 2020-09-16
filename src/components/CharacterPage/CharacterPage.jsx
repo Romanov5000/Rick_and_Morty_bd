@@ -47,7 +47,7 @@ const CharacterPage = () => {
 
   return (
     <div className={styles.CharacterPage}>
-      <div className={styles.CharacterPageDark}> 
+      <div className={styles.CharacterPageDark}>
         <div className={styles.characterBlock}>
           <div className={styles.characterImg}>
             <img src={image} alt={`${name}`} />

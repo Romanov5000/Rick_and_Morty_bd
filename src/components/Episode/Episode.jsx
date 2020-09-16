@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import styles from './Episode.module.css';
+import { Link } from "react-router-dom";
+import styles from "./Episode.module.css";
 
 export default class Episode extends React.Component {
   render() {

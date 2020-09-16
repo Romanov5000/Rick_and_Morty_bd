@@ -39,7 +39,7 @@ export default class Api {
     return result;
   };
 
-  getEposodeInfoByPage =  async (pageNumber) => {
+  getEposodeInfoByPage = async (pageNumber) => {
     const response = pageNumber
       ? await this.instance.get(`episode?page=${pageNumber}`)
       : await this.instance.get("episode");
@@ -61,7 +61,7 @@ export default class Api {
     return result;
   };
 
-  getLocationInfoByPage =  async (pageNumber) => {
+  getLocationInfoByPage = async (pageNumber) => {
     const response = pageNumber
       ? await this.instance.get(`location?page=${pageNumber}`)
       : await this.instance.get("location");

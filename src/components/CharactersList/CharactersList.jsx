@@ -39,8 +39,7 @@ class CharactersList extends React.Component {
           <h1>Character List</h1>
           <ul>{items}</ul>
         </div>
-        <Paginator
-        onPaginatorPage = {setCharactersThunk} />
+        <Paginator onPaginatorPage={setCharactersThunk} />
       </>
     );
   }

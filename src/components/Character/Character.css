@@ -1,49 +1,49 @@
 .Character {
-    display: flex;
-    background-color: rgb(60, 62, 68);
-    border-radius: 1rem;
-    margin-bottom: 0.6rem;
-    justify-content: space-between;
-    box-shadow: 0 0 3px rgb(216 199 199 / 50%);
+  display: flex;
+  background-color: rgb(60, 62, 68);
+  border-radius: 1rem;
+  margin-bottom: 0.6rem;
+  justify-content: space-between;
+  box-shadow: 0 0 3px rgb(216 199 199 / 50%);
 }
 .imgBlock {
-    width: 35%;
+  width: 35%;
 }
 .imgBlock img {
-    max-width: 100%;
-    border-bottom-left-radius: 1rem;
-    border-top-left-radius: 1rem;
-    height: 100%;
+  max-width: 100%;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  height: 100%;
 }
 .textBlock {
-    width: 55%;
-    color: cornsilk;
+  width: 55%;
+  color: cornsilk;
 }
-.textBlock .name a{
-    font-size: 1.3rem;
+.textBlock .name a {
+  font-size: 1.3rem;
 }
 .statusCircle {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: rgb(153, 157, 140);
-    margin-right: 0.2rem;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(153, 157, 140);
+  margin-right: 0.2rem;
 }
 .statusCircle.alive {
-    background-color: rgb(85, 204, 68);
+  background-color: rgb(85, 204, 68);
 }
 .statusCircle.dead {
-    background-color: rgb(214, 61, 46);
+  background-color: rgb(214, 61, 46);
 }
 .left {
-    position: relative;
-    right: -12%;
+  position: relative;
+  right: -12%;
 }
-.right{
-    position: absolute;
-    right: 9%;
+.right {
+  position: absolute;
+  right: 9%;
 }
 .right .rem {
-    margin-right: 15rem;
+  margin-right: 15rem;
 }

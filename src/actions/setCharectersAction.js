@@ -11,14 +11,14 @@ export const setCharactersThunk = (pageUrl = null) => {
   }
 
   return function (dispatch) {
-     rickMortyApi
+    rickMortyApi
       .getCharactersInfoByPage(pageNumber)
       .then(async (data) => {
         const characters = [];
         const responseCharactersArr = data.results;
         const responseInfoObj = data.info;
-  
-        
+
+
         for (let i = 0; i < responseCharactersArr.length; i++) {
           const firstEpisodeNameUrl = responseCharactersArr[i].episode[0];
           const firstEpisodeName = await rickMortyApi.getEpisodeName(

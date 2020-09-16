@@ -35,9 +35,9 @@ const App = () => {
           <Route path={`/location/:id`}>
             <LocationPage />
           </Route>
-          <Body/>
+          <Body />
         </Switch>
-        <Footer/>
+        <Footer />
       </div>
     </BrowserRouter>
   );

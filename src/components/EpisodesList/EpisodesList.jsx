@@ -33,8 +33,7 @@ class EpisodesList extends React.Component {
           <h1>Episode List</h1>
           <ul>{Episodeitems}</ul>
         </div>
-        <Paginator 
-        onPaginatorPage = {setEpisodesThunk}/>
+        <Paginator onPaginatorPage={setEpisodesThunk} />
       </>
     );
   }
