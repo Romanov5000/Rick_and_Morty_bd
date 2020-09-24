@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Romanov5000/Rick_and_Morty_bd/static/css/main.3d14f2bd.chunk.css",
+    "main.js": "/Romanov5000/Rick_and_Morty_bd/static/js/main.dd5373d3.chunk.js",
+    "main.js.map": "/Romanov5000/Rick_and_Morty_bd/static/js/main.dd5373d3.chunk.js.map",
+    "runtime-main.js": "/Romanov5000/Rick_and_Morty_bd/static/js/runtime-main.aeaa04c0.js",
+    "runtime-main.js.map": "/Romanov5000/Rick_and_Morty_bd/static/js/runtime-main.aeaa04c0.js.map",
+    "static/js/2.8cc6b26c.chunk.js": "/Romanov5000/Rick_and_Morty_bd/static/js/2.8cc6b26c.chunk.js",
+    "static/js/2.8cc6b26c.chunk.js.map": "/Romanov5000/Rick_and_Morty_bd/static/js/2.8cc6b26c.chunk.js.map",
+    "index.html": "/Romanov5000/Rick_and_Morty_bd/index.html",
+    "precache-manifest.50db60cb00fd48089e6584aa8872302a.js": "/Romanov5000/Rick_and_Morty_bd/precache-manifest.50db60cb00fd48089e6584aa8872302a.js",
+    "service-worker.js": "/Romanov5000/Rick_and_Morty_bd/service-worker.js",
+    "static/css/main.3d14f2bd.chunk.css.map": "/Romanov5000/Rick_and_Morty_bd/static/css/main.3d14f2bd.chunk.css.map",
+    "static/js/2.8cc6b26c.chunk.js.LICENSE.txt": "/Romanov5000/Rick_and_Morty_bd/static/js/2.8cc6b26c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aeaa04c0.js",
+    "static/js/2.8cc6b26c.chunk.js",
+    "static/css/main.3d14f2bd.chunk.css",
+    "static/js/main.dd5373d3.chunk.js"
+  ]
+}
