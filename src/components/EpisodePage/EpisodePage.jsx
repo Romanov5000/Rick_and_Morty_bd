@@ -36,7 +36,7 @@ const EpisodePage = () => {
           preload="none"
         >
           <source
-            src={`https://vs1.cdnlast.com/s/85c598692a53a681dfbb97bf21c7242b/rick.and.morty.2013.siendyk-nf20/${episode}_720.mp4`}
+            src={`https://vs1.cdnlast.com/s/32d61c916b972b8fbb88048ade080d99/rick.and.morty.2013.siendyk-nf20/${episode}_720.mp4`}
             type="video/mp4"
           />
         </video>
