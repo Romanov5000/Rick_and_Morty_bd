@@ -48,7 +48,7 @@ export default class Character extends React.Component {
         </div>
         <div className="textBlock">
           <div className="titleBlock">
-            <p className="name">
+            <p className="name sss">
               <Link to={`/character/${id}`}>{name}</Link>
             </p>
             <p className="status">
