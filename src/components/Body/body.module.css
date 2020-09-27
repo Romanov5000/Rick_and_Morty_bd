@@ -26,7 +26,8 @@
     color-stop(95%, rgba(23, 23, 23, 0.03)),
     to(rgba(23, 23, 23, 0))
   );
-  padding: 13rem 0rem 6rem 7rem;
+  /* padding: 13rem 0rem 6rem 7rem; */
+  padding: 32vh 0vh 14vh 12vh;
   width: 32%;
 }
 .infoBlock {
