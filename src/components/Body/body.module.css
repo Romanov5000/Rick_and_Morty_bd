@@ -30,6 +30,15 @@
   padding: 32vh 0vh 14vh 12vh;
   width: 32%;
 }
+@media (max-width: 1100px) {
+  .textBody {
+    padding: 15vh 0vh 10vh 3vh;
+    width: 70%;
+  }
+  .textBody img{
+    margin-bottom: 5vh;
+  }
+}
 .infoBlock {
   border-right: 1px solid #a3a3a3;
   margin-right: 0.6rem;

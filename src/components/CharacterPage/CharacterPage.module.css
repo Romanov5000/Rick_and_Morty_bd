@@ -1,6 +1,6 @@
 .characterBlock {
   display: flex;
-  padding: 8vh 2vh 55vh;;
+  padding: 8vh 2vh 55vh;
 }
 .CharacterPage {
   background-image: url("https://images8.alphacoders.com/794/794372.jpg");
@@ -47,4 +47,14 @@
   margin-top: 1rem;
   font-family: cursive;
   font-size: larger;
+}
+@media (max-width: 1100px) {
+  .characterBlock {
+    display: block;
+    padding: 8vh 0 12vh;
+  }
+  .characterImg img {
+    border-radius: 50%;
+    margin-left: 1.5rem;
+  }
 }
